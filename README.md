@@ -1,4 +1,4 @@
 # BO-dashboard-
 
 
-## Jacob, Leandro, Colin, Selin, Aya
+## Jacob, Leandro, Collin, Selin, Aya
