@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: #2b631f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 7rem;
+    background-color: #191A19;
+}
+
+.widget{
+    margin: 3rem;
+    border-radius: 2rem;    
+    background: #D8E9A8;
+}
+
+.widget1{
+    width: 25rem;
+    height: 25rem;
+}
+
+.widget2{
+    width: 50rem;
+    height: 25rem;
+}
+
+.widget3{
+    width: 25rem;
+    height: 50rem;
+}
+
+footer{
+    min-height: 10rem;
+    background: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer p{
+    margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+    .widget {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
+
+
