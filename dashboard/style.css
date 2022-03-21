@@ -24,6 +24,7 @@ header{
 
 .widget{
     margin: 3rem;
+    padding: 2rem;
     border-radius: 2rem;    
     background: rgb(120, 182, 105);
     border: black solid 2px;
