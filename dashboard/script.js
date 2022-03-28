@@ -1,6 +1,6 @@
 var ctx = document.getElementById('myChart');
 
-var stars = [135870, 52122, 148825, 16939, 9763];
+var stars = [4.15, 3.78, 3.68, 4.15, 4.30];
 var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
 
 var myChart = new Chart(ctx, {
