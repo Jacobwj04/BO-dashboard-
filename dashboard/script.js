@@ -1,3 +1,87 @@
+var ctx = document.getElementById('gasGrafiek');
+
+var energie = [4.15, 3.78, 3.68, 4.15, 4.30];
+var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
+
+Chart.defaults.font.size = 16;
+Chart.defaults.color = 'black';
+var gasGrafiek = new Chart(ctx, {
+    type: 'bar',     
+    data: { 
+        labels: frameworks,
+        datasets: [{ 
+            label: 'Gas verbruik',
+            data: energie,
+            backgroundColor: 
+            ["rgb(0, 0, 0 ,0)", 
+            ],
+            borderColor: 
+            [  "rgba(0,0,0)",
+            ],
+            borderWidth: 1,
+            borderRadius: 2, 
+        }]   
+    }, 
+})
+
+var ctx = document.getElementById('energieKosten');
+
+var energie = [11.4, 11.1, 10.9, 11.6, 11];
+var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
+
+Chart.defaults.font.size = 16;
+Chart.defaults.color = 'black';
+var energieKosten = new Chart(ctx, {
+    type: 'doughnut',     
+    data: { 
+        labels: frameworks,
+        datasets: [{ 
+            label: 'Energie verbruik',
+            data: energie,
+            backgroundColor: 
+            ["#4D77FF",
+            "#0E185F" ,
+            "#00C897",
+            "red",
+            "white", 
+            ],
+            borderColor: 
+            [  "rgba(0,0,0)",
+            ],
+            borderWidth: 1,
+        }]   
+    }, 
+})
+
+var ctx = document.getElementById('alleKosten');
+
+var energie = [4.15, 3.78, 3.68, 4.15, 4.30];
+var frameworks = ['Keuken', 'Woonkamer', 'Badkamer', 'Zolder', 'Slaapkamers'];
+
+Chart.defaults.font.size = 16;
+Chart.defaults.color = 'black';
+var alleKosten = new Chart(ctx, {
+    type: 'pie',     
+    data: { 
+        labels: frameworks,
+        datasets: [{ 
+            label: 'Energie verbruik',
+            data: energie,
+            backgroundColor: 
+            ["green", 
+            "blue", 
+            "red", 
+            "orange", 
+            "yellow", 
+            ],
+            borderColor: 
+            [  "rgba(0,0,0)",
+            ],
+            borderWidth: 1,
+        }]   
+    }, 
+})
+
 var ctx = document.getElementById('myChart');
 
 var energie = [4.15, 3.78, 3.68, 4.15, 4.30];
@@ -6,20 +90,20 @@ var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
 Chart.defaults.font.size = 16;
 Chart.defaults.color = 'black';
 var myChart = new Chart(ctx, {
-    type: 'line',     
+    type: 'bar',     
     data: { 
         labels: frameworks,
         datasets: [{ 
             label: 'Energie verbruik',
             data: energie,
             backgroundColor: 
-            ["rgb(0,0,0);", 
+            ["rgb(100, 214, 85)", 
             ],
             borderColor: 
             [  "rgba(0,0,0)",
             ],
             borderWidth: 1,
-            borderRadius: 15, 
+            borderRadius: 2, 
         }]   
     }, 
 })
@@ -37,8 +121,8 @@ var today = new Date();
 
   var ctx = document.getElementById('buitentemperatuur');
 
-  var Tempratuur = [11, 12, 12, 8, 8];
-  var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
+  var Tempratuur = [11, 12, 12, 8, 8, 9, 10];
+  var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'];
   
   Chart.defaults.font.size = 16;
   Chart.defaults.color = "rgb(44, 57, 87)";
@@ -56,6 +140,7 @@ var today = new Date();
               [  "rgb(0, 0, 0)",
               ],
               borderWidth: 1,
+              borderRadius: 2,
           }]   
       }, 
   })

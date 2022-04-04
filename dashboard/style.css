@@ -64,11 +64,6 @@ header > section > img{
     height: 25rem;
 }
 
-.widget3{
-    width: 25rem;
-    height: 50rem;
-}
-
 footer{
     min-height: 10rem;
     background: black;
@@ -83,17 +78,36 @@ footer p{
     margin-left: 1rem;
 }
 
-@media (max-width: 80rem) {
+@media (max-width: 500px) {
     .widget {
       flex-direction: column;
     }
-  }
+    p{
+        font-size: 3rem;
+    }
+    .widget1{
+        width: 100vw;
+        height: 38rem;
+    }
+    
+    .widget2{
+        width: 100vw;
+        height: 25rem;
+    }
+    header{
+        height: 12rem;
+        font-size: 1rem;
+    }
+    .chart--bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bar{
+        min-height: 20rem;
+    }
 
-
-  p{
-      font-size: 3rem;
-      
-  }
+}
 
 
 

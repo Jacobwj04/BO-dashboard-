@@ -20,17 +20,17 @@
         </section>
     </header>
 
-    <section class="widget2 widget">
-        <p>gas grafiek</p>
+    <section class="widget2 widget chart--bar">
+        <canvas id="gasGrafiek" class="bar"></canvas>
     </section>
     <section class="widget1 widget">
-        <p>energiekosten</p>
+        <canvas id="energieKosten" class="pie1"></canvas>
     </section>
-    <section class="widget2 widget">
-        <canvas id="myChart"></canvas>
+    <section class="widget2 widget chart--bar">
+        <canvas id="myChart" class="bar"></canvas>
     </section>
     <section class="widget1 widget">
-        <p>zonsondergang/lichtsterkte</p>
+        <p class="text">...</p>
     </section>
     <section class="widget2 widget">
         <p>weerbericht/buitentemperatuur</p>
@@ -38,14 +38,15 @@
     <section class="widget1 widget">
         <p>zonnepanelen</p>
     </section>
-    <section class="widget2 widget">
-        <p><canvas id="myChart_water"></canvas></p> 
+    <section class="widget2 widget chart--bar">
+        <p><canvas id="myChart_water" class="bar"></canvas></p> 
     </section>
     <section class="widget1 widget">
-        <p>alle kosten</p>
+        <p></p>
+        <canvas id="alleKosten" class="pie2"></canvas>
     </section>
-    <section class="widget2 widget"> 
-        <canvas id="buitentemperatuur"></canvas>  
+    <section class="widget2 widget chart--bar"> 
+        <canvas id="buitentemperatuur" class="bar"></canvas>  
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
