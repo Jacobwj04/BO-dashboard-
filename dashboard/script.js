@@ -24,9 +24,6 @@ var myChart = new Chart(ctx, {
     }, 
 })
 
-
-
-
 var today = new Date();
   var day = today.getDay();
   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
@@ -35,3 +32,58 @@ var today = new Date();
   var dateTime = date+' '+time;
    
   document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day : ' + daylist[day];
+
+
+
+  var ctx = document.getElementById('buitentemperatuur');
+
+  var Tempratuur = [11, 12, 12, 8, 8];
+  var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
+  
+  Chart.defaults.font.size = 16;
+  Chart.defaults.color = "rgb(44, 57, 87)";
+  var buitentemperatuur = new Chart(ctx, {
+      type: 'bar',     
+      data: { 
+          labels: frameworks,
+          datasets: [{ 
+              label: 'buitentemperatuur',
+              data: Tempratuur,
+              backgroundColor: 
+              ["rgba(116, 145, 170, 0.8)", 
+              ],
+              borderColor: 
+              [  "rgb(0, 0, 0)",
+              ],
+              borderWidth: 1,
+          }]   
+      }, 
+  })
+
+
+
+  var ctx = document.getElementById('myChart_water');
+
+  var water = [428, 420, 398.3, 386, 440, 450.4, 395];
+  var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'zaterdag', 'zondag'];
+  
+  Chart.defaults.font.size = 16;
+  Chart.defaults.color = "rgb(0,0,0);";
+  var myChart_water = new Chart(ctx, {
+      type: 'bar',     
+      data: { 
+          labels: frameworks,
+          datasets: [{ 
+              label: 'water verbruik',
+              data: water,
+              backgroundColor: 
+              [  "rgb(0, 92, 173)", 
+              ],
+              borderColor: 
+              [  "rgba(0,0,0)",
+              ],
+              borderWidth: 1,
+              borderRadius: 2, 
+          }]   
+      }, 
+  })
