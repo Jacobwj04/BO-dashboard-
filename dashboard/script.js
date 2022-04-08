@@ -172,3 +172,32 @@ var today = new Date();
           }]   
       }, 
   })
+
+
+  var ctx = document.getElementById('zonnepanelen');
+
+var energie = [75,25];
+var frameworks = ['energie opwekking'];
+
+Chart.defaults.font.size = 16;
+Chart.defaults.color = 'black';
+var alleKosten = new Chart(ctx, {
+    type: 'doughnut',     
+    data: { 
+        labels: frameworks,
+        datasets: [{ 
+            label: 'energie opwekking',
+            data: energie,
+            backgroundColor: 
+            ["rgb(100, 214, 85)", 
+            "#f2fe8e",
+            
+            ],
+            borderColor: 
+            [  "rgba(0,0,0)",
+            ],
+            borderWidth: 1,
+        }]   
+    }, 
+})
+
