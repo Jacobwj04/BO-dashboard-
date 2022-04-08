@@ -7,7 +7,7 @@ Chart.defaults.font.size = 16;
 Chart.defaults.color = 'black';
 var gasGrafiek = new Chart(ctx, {
     type: 'bar',     
-    data: { 
+    data: {
         labels: frameworks,
         datasets: [{ 
             label: 'Gas verbruik',
