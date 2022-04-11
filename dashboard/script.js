@@ -1,6 +1,6 @@
 var ctx = document.getElementById('gasGrafiek');
 
-var energie = [4.15, 3.78, 3.68, 4.15, 4.30];
+var energie = [89, 67, 143, 96, 85];
 var frameworks = ['Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag'];
 
 Chart.defaults.font.size = 16;
